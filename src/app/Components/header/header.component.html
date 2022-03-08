@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-inverse" id="mainNav">
+    <div class="menu-container clip-dark-theme">
+        <div class="navigation-container">
+            <div class="header-container">
+                <a href="/" class="navbar-brand nav-logo">
+                    <img class="logo" src="assets/img/logo.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item dropdown" id="video-dropdown">
+                            <a class="nav-link " href="#">
+                                <span>Chủ đề</span>
+                                <div style="width: 10px; height: 10px;" class="dropdown-icon" id="dropdown-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                    <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                                  </svg>
+                                </div>
+                            </a>
+                            <div id="videos-modal" class="dropdown-menu videos-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="topics-menu-header d-flex justify-content-beetwen">
+                                    <h3 class="topics-menu-title">
+                                        Khám phá theo chủ đề
+                                    </h3>
+                                    <div class="line-menu">
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="topics-menu">
+                                        <ul>
+                                            <li *ngFor="let movie of movies1">
+                                                <a href="/" class="dropdown-item">{{movie.topic}}</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li *ngFor="let movie of movies2">
+                                                <a href="/" class="dropdown-item">{{movie.topic}}</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li *ngFor="let movie of movies3">
+                                                <a href="/" class="dropdown-item">{{movie.topic}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thịnh hành</a>
+                        </li>
+                        <li class="nav-item dropdown search-input">
+                            <form class="d-flex inputbox">
+                                <div id="icon-search">
+                                    <div id="svg-search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <input id="show-search" type="text" name="search" repuire placeholder="Tìm kiếm video" value="">
+                                <button class="del" type="reset"></button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng nhập</a>
+                        </li>
+                        <li class="btn-border aligt-self-center">
+                            <a class="nav-link link-hover btn-border" href="#">
+                                <span>Trải nghiệm ngay</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
