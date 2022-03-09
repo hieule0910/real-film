@@ -6,12 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-banner.component.scss']
 })
 export class MainBannerComponent implements OnInit {
-
-  images = [
-    "assets/img/main1.jpg",
-    "assets/img/main2.jpg"
-  ]
-
   newRelease = [
     {
       id: 1,

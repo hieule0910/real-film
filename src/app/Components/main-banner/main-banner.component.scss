@@ -48,6 +48,17 @@
         display: inline-flex;
         align-items: center;
     }
+    & .swiper-pagination-bullet {
+        background: inherit;
+        border-radius: 0;
+        opacity: 1;
+        display: block;
+        margin-left: 1px;
+        text-align: -webkit-match-parent;
+        & img {
+            height: 3vw;
+        }
+    }
 }
 
 .new-releases-slider.owl-carousel {
@@ -233,4 +244,35 @@
 .contaier {
     padding-left: 1%;
     padding-right: 1%;
+}
+
+// Dots
+ul.carousel-indicators {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    bottom: 3vw!important;
+    right: 4%!important;
+    text-align: right!important;
+    & li {
+        border-radius: 12px;
+        width: auto;
+        height: 0.75rem;
+    }
+}
+
+ul#slick-dots {
+    & li {
+        width: 82px;
+    }
+}
+
+#slick-dots {
+    & li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+    }
 }

@@ -2,7 +2,7 @@
     <div class="slick-initialized slick-slider">
         <div class="slick-list">
             <div class="slick-track" style="opacity: 1;">
-                <ngb-carousel>
+                <ngb-carousel id="myCarousel">
                     <ng-template ngbSlide *ngFor="let movie of newRelease">
                         <div class="picsum-img-wrapper">
                             <div class="banner-img ratio16x9">
@@ -52,9 +52,14 @@
                         </div>
                     </ng-template>
                 </ngb-carousel>
+                <ul class="carousel-indicators" id="slick-dots" style="display: block;">
+                    <li data-bs-target="#myCarousel" class="" style="opacity: 1;" *ngFor="let img of newRelease">
+                        <span class="swiper-pagination-bullet">
+                          <img src={{img.url}} alt="">
+                      </span>
+                    </li>
+                </ul>
             </div>
-
         </div>
     </div>
-
 </div>
