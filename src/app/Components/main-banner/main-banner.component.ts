@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-main-banner',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-banner.component.scss']
 })
 export class MainBannerComponent implements OnInit {
+
   newRelease = [
     {
       id: 1,
@@ -33,9 +35,18 @@ export class MainBannerComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  @ViewChild("carousel") carousel?: NgbCarousel;
+  constructor() {
+
+
+   }
 
   ngOnInit(): void {
+  }
+
+  nextPage(i: number): void {
+    console.log(i);
+    this.carousel?.select('ngb-slide-' + i);
   }
 
 }
