@@ -53,9 +53,9 @@
                     </ng-template>
                 </ngb-carousel>
                 <ul class="carousel-indicators" id="slick-dots" style="display: block;">
-                    <li style="opacity: 1;" *ngFor="let img of newRelease; let i = index" (click)="nextPage(i)">
+                    <li id="activeDots" class="" style="opacity: 1;" *ngFor="let img of newRelease; let i = index" (click)="nextPage(i)">
                         <span class="swiper-pagination-bullet">
-                        <img src={{img.url}} alt="">
+                        <img src={{img.url}} alt="img">
                     </span>
                     </li>
                 </ul>
