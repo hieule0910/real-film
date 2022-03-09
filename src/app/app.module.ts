@@ -8,6 +8,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { MainBannerComponent } from './Components/main-banner/main-banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomemainComponent } from './Components/homemain/homemain.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomemainComponent } from './Components/homemain/homemain.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

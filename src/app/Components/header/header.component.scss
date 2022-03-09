@@ -17,7 +17,7 @@
             & .header-container {
                 display: flex;
                 width: 100%;
-                background: rgba($color: #000000, $alpha: 0.5);
+                // background: rgba($color: #000000, $alpha: 0.5);
                 // --------------------- LOGO -------------------------------------
                 & .nav-logo {
                     width: 205px;
@@ -43,7 +43,7 @@
                         line-height: 1.375rem;
                         cursor: pointer;
                         &:not(.dropdown-item) {
-                            color: white;
+                            color: #fff;
                         }
                         &.btn-border {
                             display: inline-block;
@@ -187,7 +187,14 @@
                                 margin-left: 0.5rem;
                                 padding-bottom: 2px;
                                 &::placeholder {
-                                    color: rgba(0, 0, 0, 0.123);
+                                    color: #fff;
+                                }
+                                &:focus {
+                                    border: none;
+                                    width: 80%;
+                                    box-shadow: none;
+                                    outline: none;
+                                    border-bottom: thin solid #fff;
                                 }
                             }
                             & .del {
@@ -216,4 +223,17 @@
             }
         }
     }
+}
+
+#mainNav.affix {
+    position: fixed;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    padding-bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: #232323;
+    border-color: rgba(34, 34, 34, .1);
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 50%);
 }
