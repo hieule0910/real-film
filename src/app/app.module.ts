@@ -9,6 +9,7 @@ import { MainBannerComponent } from './Components/main-banner/main-banner.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomemainComponent } from './Components/homemain/homemain.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeTipsComponent } from './components/home-tips/home-tips.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     MainBannerComponent,
     HomemainComponent,
+    HomeTipsComponent,
   ],
   imports: [
     BrowserModule,
