@@ -9,7 +9,9 @@ import { MainBannerComponent } from './Components/main-banner/main-banner.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomemainComponent } from './Components/homemain/homemain.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeTipsComponent } from './components/home-tips/home-tips.component';
+import { HomeTipsComponent } from './Components/home-tips/home-tips.component';
+import { MoviesNewReleaseComponent } from './components/movies-new-release/movies-new-release.component';
+import { TrendingComponent } from './components/trending/trending.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HomeTipsComponent } from './components/home-tips/home-tips.component';
     MainBannerComponent,
     HomemainComponent,
     HomeTipsComponent,
+    MoviesNewReleaseComponent,
+    TrendingComponent,
   ],
   imports: [
     BrowserModule,
